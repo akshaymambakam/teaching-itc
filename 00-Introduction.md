@@ -55,10 +55,13 @@ If we use only two symbols it is called binary system, if eight it is called Oct
 
 ### Example: Binary System
 
-$$students = 264 \newline
-students = 256 + 8 \newline
-students = 1\times 2^8 + 0\times 2^7 + 0\times 2^6+ 0\times 2^5 + 0\times 2^4 + 1\times 2^3 + 0\times 2^2 + 0\times 2^1 + 0\times 2^0 \newline
-students = (100001000)_2
+$$
+\begin{array}{l}
+\text{students} = 264 \\
+\text{students} = 256 + 8 \\
+\text{students} = 1\times 2^8 + 0\times 2^7 + \cdots + 0\times 2^0 \\
+\text{students} = (100001000)_2
+\end{array}
 $$
 
 ### Example: Octal System

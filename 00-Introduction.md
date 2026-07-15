@@ -105,17 +105,14 @@ $$
 $$
 
 Here, the hexadecimal digit \(A\) represents the decimal value \(10\).
+
 $$
-(3A5)_{16} = 3 \times 16^2 + 10 \times 16^1 + 5 \times 16^0
-$$
-$$
-= 3 \times 256 + 10 \times 16 + 5 \times 1
-$$
-$$
-= 768 + 160 + 5
-$$
-$$
+\begin{array}{l}
+(3A5)_{16} = 3 \times 16^2 + 10 \times 16^1 + 5 \times 16^0 \n
+= 3 \times 256 + 10 \times 16 + 5 \times 1 \n
+= 768 + 160 + 5 \n
 = 933_{10}
+\end{array}
 $$
 
 Therefore,

@@ -55,43 +55,43 @@ If we use only two symbols it is called binary system, if eight it is called Oct
 
 ### Example: Binary System
 
-$students = 264 \newline
+$$students = 264 \newline
 students = 256 + 8 \newline
 students = 1\times 2^8 + 0\times 2^7 + 0\times 2^6+ 0\times 2^5 + 0\times 2^4 + 1\times 2^3 + 0\times 2^2 + 0\times 2^1 + 0\times 2^0 \newline
 students = (100001000)_2
-$
+$$
 
 ### Example: Octal System
 
 Consider the octal number:
 
-$
+$$
 (753)_8
-$
+$$
 
 Its positional decomposition is:
 
-$
+$$
 (753)_8 = 7 \times 8^2 + 5 \times 8^1 + 3 \times 8^0
-$
+$$
 
-$
+$$
 = 7 \times 64 + 5 \times 8 + 3 \times 1
-$
+$$
 
-$
+$$
 = 448 + 40 + 3
-$
+$$
 
-$
+$$
 = 491_{10}
-$
+$$
 
 Therefore,
 
-$
+$$
 (753)_8 = (491)_{10}
-$
+$$
 
 ### Example: Hexadecimal System
 
@@ -102,24 +102,24 @@ $$
 $$
 
 Here, the hexadecimal digit \(A\) represents the decimal value \(10\).
-$
+$$
 (3A5)_{16} = 3 \times 16^2 + 10 \times 16^1 + 5 \times 16^0
-$
-$
+$$
+$$
 = 3 \times 256 + 10 \times 16 + 5 \times 1
-$
-$
+$$
+$$
 = 768 + 160 + 5
-$
-$
+$$
+$$
 = 933_{10}
-$
+$$
 
 Therefore,
 
-$
+$$
 (3A5)_{16} = (933)_{10}
-$
+$$
 
 ### Question
 Can we have a base 1 system? How will it look? Remember prisoners counting days in films.

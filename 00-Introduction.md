@@ -97,9 +97,9 @@ $
 
 Consider the hexadecimal number:
 
-$
+$$
 (3A5)_{16}
-$
+$$
 
 Here, the hexadecimal digit \(A\) represents the decimal value \(10\).
 $

@@ -89,6 +89,7 @@ $$
 \end{array}
 
 $$
+
 Can you now convert binary numbers to decimal numbers?
 
 ## Decimal to binary conversion
@@ -108,6 +109,7 @@ Consider the integer and fractional parts separately.
 ### Examples
 
 Let us represent 200 in binary.
+
 $$
 \begin{array}{lll}
 quotient & dividend & remainder \\
@@ -124,6 +126,7 @@ quotient & dividend & remainder \\
 \end{array}
 200_{10}​=11001000_2​
 $$
+
 *Notice the reverse order*
 
 Let us consider .634 to see how to handle fractional parts.
@@ -135,6 +138,7 @@ Let us consider .634 to see how to handle fractional parts.
 .072 x 2 = 0.144
 .144 x 2 = 0.288
 ```
+
 $$
 (.634)_{10} = (.10100...)_2
 $$

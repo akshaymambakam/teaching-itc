@@ -35,7 +35,7 @@ Behind the scenes, the modern computers use transistors whose voltage has two le
 - Images, Videos.
 - and a lot more.
 
-# The mathematics behind
+## The mathematics behind zeroes and ones
 
 We start with the decimal numbers we know well. You might see on your apps something like this:
 ```
@@ -64,65 +64,9 @@ $$
 \end{array}
 $$
 
-### Example: Octal System
-
-Consider the octal number:
-
-$$
-(753)_8
-$$
-
-Its positional decomposition is:
-
-$$
-(753)_8 = 7 \times 8^2 + 5 \times 8^1 + 3 \times 8^0
-$$
-
-$$
-= 7 \times 64 + 5 \times 8 + 3 \times 1
-$$
-
-$$
-= 448 + 40 + 3
-$$
-
-$$
-= 491_{10}
-$$
-
-Therefore,
-
-$$
-(753)_8 = (491)_{10}
-$$
-
-### Example: Hexadecimal System
-
-Consider the hexadecimal number:
-
-$$
-(3A5)_{16}
-$$
-
-Here, the hexadecimal digit \(A\) represents the decimal value \(10\).
-
-$$
-\begin{array}{l}
-(3A5)_{16} = 3 \times 16^2 + 10 \times 16^1 + 5 \times 16^0 \\
-= 3 \times 256 + 10 \times 16 + 5 \times 1 \\
-= 768 + 160 + 5 \\
-= 933_{10}
-\end{array}
-$$
-
-Therefore,
-
-$$
-(3A5)_{16} = (933)_{10}
-$$
-
-### Question
-Can we have a base 1 system? How will it look? Remember prisoners counting days in films.
+### Questions
+- Can we have a base 1 system? How will it look? Remember prisoners counting days in films.
+- Given $a_3\times 2^3 + a_2\times 2^2 + a_1\times 2^1 + a_0 = 15$, How do you find the value of $a_0$? **Hint:** Think of the divisor, dividend, quotient, and reminder when you perform $15\div 2$.
 
 ## How do computers do this math?
 Since computers only can understand bits they have to perform math using operations on bits. This is accomplished using basic logic gates and binary logic.
@@ -148,6 +92,89 @@ carry ->    1 1 1 - -
 25 ->       1 1 0 0 1
 ```
 
+# Programming
+We will be learning how to write programs. Programs are a set of instructions we give the computer. They tell them what to do. We need a language in which to write a program.
+
+- High-level languages: C/C++, Java, Python, Javascript etc.
+- High-level languages are human readable.
+- But, computers only understand binary. Compiler!
+- Low-level languages: Machine code (binary code), Assembly language.
+
+
+![Desktop and Computer](desktop-lappy.jpg)
+
+## Three steps of programming
+The programming language C is a *compiled* high-level language. Therefore, we need to follow the following steps:
+- Write the program in a high-level language.
+- Compile the program using a compiler.
+- Get the executable code which is binary.
+- Run the program.
+
+```mermaid
+flowchart TD
+    A[Write a program] -->|Program| B(Compiler)
+    B -->|Executable code| C[Run the program]
+```
+
+There are some programming languages that do not need compilation. They can be directly run using an *interpreter*. They are called *interpreted* languages. The interpreter reads our code and executes it for us. Famous example is *Python*.
+
+### Flowcharts
+You can also think of programs in terms of flowcharts.
+```mermaid
+flowchart TB
+    A[Computation]
+    B[/Input or Output/]
+    C{Decision}
+    D([Start or Stop])
+    E((Connector))
+    
+    A ~~~ B
+    B ~~~ C
+    C ~~~ D
+    D ~~~ E
+
+    subgraph Control_Flow[" "]
+        direction TB
+        F[" "] -->|Flow of control| G[" "]
+    end
+
+    style F fill:none,stroke:none
+    style G fill:none,stroke:none
+    style Control_Flow fill:none,stroke:none
+```
+### Simple Example
+
+```mermaid
+flowchart TB
+A([Start]) --> B[/Read X, Y/] --> C{Is X>Y?}
+-->|Yes| D[/Output X/] --> E([Stop])
+C -->|No| F[/Output Y/] --> G([Stop])
+```
+
+**What is this flowchart computing?**
+
+## A sample C program
+```C
+/* Multiline comment 
+    Describe the code 
+*/
+
+#include <stdio.h>
+
+int main(){
+    // Single line Comment
+    printf("Hello world!\n");
+    return 0;
+}
+
+```
+![printf output](printf-output.png)
+
+**Things to note:**
+- What is the *exit code*?
+- You can include *libraries* that are not written by you.
+- You will generally only use a limited number of standard libraries in this course.
+- Main is the *entry point* of any program.
 
 # References
 https://cs.calvin.edu/activities/books/processing/text/01computing.pdf

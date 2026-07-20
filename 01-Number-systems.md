@@ -76,13 +76,11 @@ Examples
 
 $$
 \begin{array}{l}
-101011_2 \longleftrightarrow 1 \times 2^5 + 0 \times 2^4 + 1 \times 2^3 + 0 \times 2^2 + 1 \times 2^1 + 1 \times 2^0 = 43 \\[6pt]
-(101011)_2 = (43)_{10} \\[8pt]
-
-.0101_2 \longleftrightarrow 0 \times 2^{-1} + 1 \times 2^{-2} + 0 \times 2^{-3} + 1 \times 2^{-4} = .3125 \\[6pt]
-(.0101)_2 = (.3125)_{10} \\[8pt]
-
-101.11_2 \longleftrightarrow 1 \times 2^2 + 0 \times 2^1 + 1 \times 2^0 + 1 \times 2^{-1} + 1 \times 2^{-2} = 5.75 \\[6pt]
+101011_2 \longleftrightarrow 1 \times 2^5 + 0 \times 2^4 + 1 \times 2^3 + 0 \times 2^2 + 1 \times 2^1 + 1 \times 2^0 = 43 \\
+(101011)_2 = (43)_{10} \\
+.0101_2 \longleftrightarrow 0 \times 2^{-1} + 1 \times 2^{-2} + 0 \times 2^{-3} + 1 \times 2^{-4} = .3125 \\
+(.0101)_2 = (.3125)_{10} \\
+101.11_2 \longleftrightarrow 1 \times 2^2 + 0 \times 2^1 + 1 \times 2^0 + 1 \times 2^{-1} + 1 \times 2^{-2} = 5.75 \\
 (101.11)_2 = (5.75)_{10}
 \end{array}
 $$

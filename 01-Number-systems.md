@@ -144,6 +144,7 @@ $$
 $$
 
 To put both of these together, let us convert 12.25 to binary
+
 $$
 \begin{array}{ll}
 (12)_{10} & = (1100)_2 \\
@@ -154,6 +155,7 @@ $$
 
 ## Hexadecimal number system
 This is a compact way of representing binary numbers. We assign a symbol to four bits put together as below:
+
 $$
 \begin{array}{ccl}
 0000 & \longleftrightarrow & 0 \\
@@ -184,24 +186,31 @@ We treat the integer and fractional parts separately as before and put them toge
     - Add zeroes at the end if needed (called trailing zeroes).
 
 Examples
+
 $$
 \begin{array}{rcl}
 (1011\ 0100\ 0011)_2 & = & (B43)_{16} \\
 \end{array}
 $$
+
 Adding leading zeroes
+
 $$
 \begin{array}{rcrcl}
 (10\ 1010\ 0001)_2 & = & (0010\ 1010\ 0001)_2 & = & (2A1)_{16} \\
 \end{array}
 $$
+
 Adding both leading and trailing zeroes
+
 $$
 \begin{array}{rcrcl}
 (.1000\ 010)_2 & = & (.1000\ 0100)_2 & = & (.84)_{16} \\
 \end{array}
 $$
+
 Adding both leading and trailing zeroes
+
 $$
 \begin{array}{rcrcl}
 (101.0101\ 111)_2 & = & (0101.0101\ 1110)_2 & = & (5.5E)_{16}
@@ -210,6 +219,7 @@ $$
 
 ### Converting from hexadecimal to binary
 Just replace each hexadecimal digit with the four bit binary equivalent.
+
 $$
 \begin{array}{rcl}
 (3A5)_{16} & = & (0011\ 1010\ 0101)_2 \\

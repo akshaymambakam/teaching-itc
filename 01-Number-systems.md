@@ -87,7 +87,6 @@ $$
 (101.11)_2 = (5.75)_{10}
 
 \end{array}
-
 $$
 
 Can you now convert binary numbers to decimal numbers?

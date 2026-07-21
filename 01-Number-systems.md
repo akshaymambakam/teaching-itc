@@ -439,8 +439,22 @@ Overflow example:
 (-96) 10100000
 ```
 ## Floating point representation
-To represent a wide range of real numbers we use the floating point representation.
+To represent a wide range of real numbers we use the floating point representation. This has been standardized by IEEE (Institute of Electrical and Electronics Engineers) under the *IEEE 754 standard*.
 
 ![Float numbers](float_example.svg)
 
+- Normalized numbers: $(-1)^s\times 1.f \times 2^{E-127}$
+- Denormalized numbers: Here $E=0$ and the number is $(-1)^s\times 0.f \times 2^{-126}$.
+- We get zero (both negative and positive versions) when both $E$ and $f$ are zeroes.
+- Special numbers:
+    - `0 11111111 00000000000000000000000 <--> +Inf`
+    - `1 11111111 00000000000000000000000 <--> –Inf`
+    - `0 11111111 Any non-zero value <--> NaN`
+    - `1 11111111 Any non-zero value <--> NaN`
+    - `Inf` is infinity.
+    - `NaN` is Not a number.
+
+For more precision and range we can increase the size of the representation to $64$-bit and this is usually called a $double$.
+
+![Double numbers](double_example.svg)
 

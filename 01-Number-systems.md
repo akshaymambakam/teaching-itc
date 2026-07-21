@@ -287,7 +287,7 @@ $$
 
 What is the range of numbers that can be represented in this notation? It is $-2^{n-1}$ to $2^{n-1}$.
 
-#### One’s Complement Representation
+#### One’s complement representation
 Basic idea:
 - Positive numbers are represented exactly as in sign-magnitude form.
 - Negative numbers are represented in 1’s complement form.
@@ -304,5 +304,37 @@ How to compute the 1’s complement of a number?
 | +3 | `011` | -3 | `100` |
 
 Notice that the range of the numbers is the same as that for sign-magnitude representation. We also have the same problem of having two different representations for zero.
+
+#### Two's complement representation
+Basic idea:
+- Positive numbers are represented exactly as in sign-magnitude form.
+- Negative numbers are represented in two’s complement form.
+
+How to compute the two’s complement of a number?
+- Complement every bit of the number (1 to 0 and 0 to 1), and then add one to the resulting
+number.
+- MSB will indicate the sign of the number.
+
+Representation of 3-bit numbers in two's complement.
+
+| Positive Number | 3-bit Two's Complement | Negative Number | 3-bit Two's Complement |
+|-----------------|------------------------|-----------------|------------------------|
+| +0 | `000` | -1 | `111` |
+| +1 | `001` | -2 | `110` |
+| +2 | `010` | -3 | `101` |
+| +3 | `011` | -4 | `100` |
+
+For example, to get the representation of 3.
+- First write $+3 = 011$.
+- Then Complement $011 \rightarrow 100$.
+- Now add a 1 to get $100+1=101$.
+
+Advantages
+- Range is from $-2^{n-1}$ to $2^{n-1}-1$
+- Only one representation of zero.
+- Subtraction and addition can be done using the same operations.
+
+**Note:** Most modern computers use this notation.
+
 
 

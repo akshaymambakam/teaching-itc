@@ -258,7 +258,7 @@ When we also need to represent negative integers then there are three main ways.
 - Two's complement representation.
 
 #### Sign magnitude representation
-Use one bit to represent the sign. Use the rest of the bits to represent the magnitude of the number.
+Use one bit to represent the sign. This bit is generally the most significant bit (MSB). Use the rest of the bits to represent the magnitude of the number.
 
 $$
 \begin{aligned}
@@ -284,3 +284,25 @@ $$
 -0 \rightarrow 1~00\cdots 00 \\
 \end{aligned}
 $$
+
+What is the range of numbers that can be represented in this notation? It is $-2^{n-1}$ to $2^{n-1}$.
+
+#### One’s Complement Representation
+Basic idea:
+- Positive numbers are represented exactly as in sign-magnitude form.
+- Negative numbers are represented in 1’s complement form.
+
+How to compute the 1’s complement of a number?
+- Flip every bit of the number ($1$ to $0$ and $0$ to $1$). The actual term is taking the complement.
+- The MSB will be the sign of the number. For positive numbers $0$ and for negative numbers $1$.
+
+| Positive Number | 3-bit One's Complement | Negative Number | 3-bit One's Complement |
+|-----------------|------------------------|-----------------|------------------------|
+| +0 | `000` | -0 | `111` |
+| +1 | `001` | -1 | `110` |
+| +2 | `010` | -2 | `101` |
+| +3 | `011` | -3 | `100` |
+
+Notice that the range of the numbers is the same as that for sign-magnitude representation. We also have the same problem of having two different representations for zero.
+
+

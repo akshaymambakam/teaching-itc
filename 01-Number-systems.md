@@ -225,3 +225,59 @@ $$
 
 #### Question
 How do you convert from binary to octal and vice versa? Can you group three bits together like we did for hexadecimal numbers?
+
+## Signed and unsigned integers
+Till now we seen only non-negative integers. We will also see different representations of negative integers.
+
+### Unsigned binary numbers
+An n-bit binary number
+
+$$
+B = b_{n-1} b_{n-2} \cdots b_2 b_1 b_0
+$$
+
+How many possible n-bit binary numbers can we have? It is $2\times 2\times 2\times\cdots\times 2$ repeated $n$ times. Which is $2^n$. We can represent numbers from $0$ to $2^n-1$.
+
+For $n=3$ the numbers we can represent are $000$, $001$,$010$, $011$, $100$, $101$, $110$, $111$. 
+
+As we increase the value of the number of bits $n$ we can represent more numbers.
+
+$$
+\begin{array}{lcl}
+n = 8 & \rightarrow & 0\text{ to } 2^8-1~(255) \\
+n = 16 & \rightarrow & 0\text{ to } 2^{16}-1~(65535) \\
+n = 32 & \rightarrow & 0\text{ to } 2^{32}-1~(4294967295)
+\end{array}
+$$
+
+### Signed binary numbers
+When we also need to represent negative integers then there are three main ways.
+
+- Sign-magnitude representation.
+- One's complement representation.
+- Two's complement representation.
+
+#### Sign magnitude representation
+Use one bit to represent the sign. Use the rest of the bits to represent the magnitude of the number.
+
+$$
+\begin{aligned}
+\text{positive} \rightarrow 0 \\
+\text{negative} \rightarrow 1
+\end{aligned}
+$$
+
+For an n-bit number
+$$
+\text{Use }b_{n-1}\text{ for the sign} \\
+\text{Use }b_{n-2}\cdots b_{1}b_0\text{ for the magnitude}
+$$
+
+One problem with this is that there is a negative and a positive zero.
+
+$$
+\begin{aligned}
++0 \rightarrow 0~00\cdots 00 \\
+-0 \rightarrow 1~00\cdots 00 \\
+\end{aligned}
+$$

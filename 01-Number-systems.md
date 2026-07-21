@@ -336,5 +336,111 @@ Advantages
 
 **Note:** Most modern computers use this notation.
 
+## Binary arithmetic (addition and subtraction)
+Before visiting the general addition and subtraction of $n$-bit numbers in one's complement and two's complement representations, let us first look at addition of $1$-bit numbers.
+
+Addition of single bits or binary digits follows simple rules:
+- 0 + 0 is 0 with no carry
+- 0 + 1 is 1 with no carry
+- 1 + 0 is 1 with no carry
+- 1 + 1 is 0 with a carry of 1 which is 10 if we allow two bits.
+
+If we want to put this in a truth table form (which can help in digital logic design) we get
+
+| A | B | Sum (S) | Carry (C) |
+|---|---|---------|-----------|
+| 0 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 1 | 0 |
+| 1 | 1 | 0 | 1 |
+
+Both one's complement and two's complement representations allow for using the same sequence of operations to handle both addition and subtraction.
+
+**The trick:** To subtract a number $b$ from another number $a$, just take $-b$ in the representation and add it to $a$.
+
+### Addition and subtraction for numbers in one's complement representation
+We do the addition in a way very similar to decimal numbers with carry forward. The only difference is that we follow the sum and carry calculation procedure that we have just seen. Let us look closely at subtraction
+- To compute $a-b$,
+- Take the one's complement of $b$ and get $-b$.
+- Now add $a$ and $-b$ using the binary addition procedure to get the result $c$.
+- If we get a carry of $1$ at the end of the procedure then we need to perform extra operations
+    - Add the carry back to $c$. This is called *end-around carry*.
+    - This means that final result $r = c + 1$.
+    - The result will be a positive number.
+- If the carry at the end of the procedure is $0$ then no extra processing is needed. The result will be a negative number in its one's complement representation.
+
+Example with end-around carry:
+
+```
+          Carry:  1 1 0  (carry into each column)
+                  ↓ ↓ ↓
+                   0 1 1 (+3)
+                 + 1 0 1 (-2)
+                 ---------
+                 1 0 0 0
+
+Now perform end-around carry
+                   0 0 0
+                 + 0 0 1
+                 --------
+          Result:  0 0 1 (+1)
+```
+
+Example without end-around carry:
+
+```
+    0011 (+3)
+    1010 (–5)
+   -----------
+    1101 (+2)
+```
+
+### Addition and subtraction for numbers in two's complement representation
+Addition is same as before. Let us look at subtraction
+- To compute $a-b$,
+- Get the two's complement of $b$ as $-b$.
+- Now perform addition on $a$ and $-b$.
+- If the carry at the end of the procedure is $1$:
+    - Ignore the carry.
+    - The result is a positive number.
+- If the carry at the end of the procedure is $0$:
+    - The result is a negative number in its two's complement form.
+
+Example with carry:
+
+```
+    0110 (+6)
+    1110 (–2)
+  ------------
+  1 0100 (+4)
+Just ignore the carry
+```
+
+Example without carry:
+```
+    0011 (+3)
+    1011 (–5)
+  ------------
+    1110 (-2)
+```
+#### Underflow and overflow
+Due to the limited or finite number of bits we use to represent numbers we might face situations of *underflow* and *overflow*. The are defined as:
+- Adding two positive numbers should not give a negative number. If it does then it is termed as *overflow*.
+- Adding two negative numbers should not give a positive number. If it does then it is termed as *underflow*.
+
+To detect underflow or overflow check if:
+- carry in and carry out of the MSB are different.
+
+Overflow example:
+```
+(64)  01000000
+(96)  01100000
+--------------
+(-96) 10100000
+```
+## Floating point representation
+To represent a wide range of real numbers we use the floating point representation.
+
+![Float numbers](float_example.svg)
 
 

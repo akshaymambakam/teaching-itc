@@ -270,8 +270,10 @@ $$
 For an n-bit number
 
 $$
+\begin{array}{c}
 \text{Use }b_{n-1}\text{ for the sign} \\
 \text{Use }b_{n-2}\cdots b_{1}b_0\text{ for the magnitude}
+\end{array}
 $$
 
 One problem with this is that there is a negative and a positive zero.

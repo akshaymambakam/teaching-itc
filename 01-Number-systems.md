@@ -324,7 +324,7 @@ Representation of 3-bit numbers in two's complement.
 | +2 | `010` | -3 | `101` |
 | +3 | `011` | -4 | `100` |
 
-For example, to get the representation of 3.
+For example, to get the representation of -3.
 - First write $+3 = 011$.
 - Then Complement $011 \rightarrow 100$.
 - Now add a 1 to get $100+1=101$.

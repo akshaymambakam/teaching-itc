@@ -154,7 +154,7 @@ C -->|No| F[/Output Y/] --> G([Stop])
 **What is this flowchart computing?**
 
 ## A sample C program
-```C
+```c
 /* Multiline comment 
     Describe the code 
 */

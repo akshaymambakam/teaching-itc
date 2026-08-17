@@ -416,12 +416,19 @@ Example with carry:
 Just ignore the carry
 ```
 
-Example without carry:
+Examples without carry:
 ```
     0011 (+3)
     1011 (–5)
   ------------
     1110 (-2)
+```
+```
+       1 1     
+     0 0 1 1  (3)
+    +0 0 1 1  (3)
+    ----------
+     0 1 1 0  (6)
 ```
 #### Underflow and overflow
 Due to the limited or finite number of bits we use to represent numbers we might face situations of *underflow* and *overflow*. The are defined as:
@@ -458,3 +465,8 @@ For more precision and range we can increase the size of the representation to $
 
 ![Double numbers](double_example.svg)
 
+# References and links
+- https://www.ias.ac.in/article/fulltext/reso/021/01/0011-0030
+- https://ethw.org/Milestones:IEEE_Standard_754_for_Binary_Floating-Point_Arithmetic,_1985
+- https://people.eecs.berkeley.edu/~wkahan/ieee754status/754story.html
+- https://cs357.cs.illinois.edu/textbook/assets/slides/94-Floating-Point.pdf

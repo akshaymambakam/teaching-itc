@@ -37,6 +37,7 @@ The program checks the conditions one by one:
 
 # Decision tree to C code
 ![alt text](image.png)
+
 A company wants to predict whether a customer will **buy a product** based on:
 
 - **Income**

@@ -149,3 +149,39 @@ The program should:
 5. Use **nested `if-else` statements** to check the constraints.
 6. Display the selected configuration and whether the order is **Feasible** or **Not Feasible**.
 
+# Problem Statement: Find the Next Date
+
+Write a C program to find the **next date** when the user enters a day and month.
+
+The program should determine the number of days in the given month and then increase the day by one.
+
+## Requirements
+
+1. Read the **day** and **month** from the user.
+2. Use a `switch` statement to determine the number of days in the given month.
+3. Consider:
+   - January, March, May, July, August, October, and December as having **31 days**.
+   - April, June, September, and November as having **30 days**.
+   - February as having **28 days**.
+4. If the user enters an invalid month, display **"Invalid month"** and terminate the program.
+5. If the day is invalid, display **"Invalid day"** and terminate the program.
+6. Check whether the entered **day is valid** for the given month.
+7. If the entered day is the last day of the month, the next date should be the **1st day of the next month**.
+8. If the entered date is **31/12**, the next date should be **1/1**.
+9. Display the next date in the format `day/month`.
+
+
+## Example
+
+### Input
+
+```text
+Enter day: 28
+Enter month: 2
+```
+
+### Output
+
+```text
+Next date: 1/1
+```

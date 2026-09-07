@@ -183,5 +183,5 @@ Enter month: 2
 ### Output
 
 ```text
-Next date: 1/1
+Next date: 1/3
 ```

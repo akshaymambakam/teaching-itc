@@ -9,6 +9,13 @@ Relevant slides with page numbers:
 - Loops, conditions, and scope, Lecture 3, pages 1-24, 38-40
 - Arrays, Lecture 5, pages 15, 18-20, Lecture 7, page 13
 - Functions, Lecture 1, pages 25-28
+- Pointers and variable passing, Lecture 5, pages 5-17
+- Searching and sorting, Lecture 5, pages 21-33
+- Dynamic memory allocation, Lecture 6, page 14
+
+Important reading from `The C programming language` book by Ritchie:
+- Chapter 5, till section 5.5, pages 78-89
+
 
 # Practice problems
 - Balaguruswamy book:

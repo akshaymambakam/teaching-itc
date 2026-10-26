@@ -35,3 +35,10 @@ Important reading from `The C programming language` book by Ritchie:
         - Review questions: 9.7, 9.10, 9.11, 9.12, 9.13
         - Debugging exercises: All
         - Programming questions: 9.1, 9.3, 9.4, 9.6, 9.8, 9.11, 9.12, 9.17, 9.19
+    - Chapter 10:
+        - Review questions: 10.1, 10.2, 10.3, 10.6, 10.7, 10.10, 10.11, 10.12, 10.13, 10.14
+        - Debugging exercises: All
+        - Programming questions: 10.3, 10.4, 10.5, 10.7, 10.8, 10.17
+    - Chapter 11:
+        - Multiple choice questions: 12.1, 12.3, 12.4
+        - Review questions: 12.1, 12.2

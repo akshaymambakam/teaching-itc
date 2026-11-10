@@ -15,7 +15,13 @@ Relevant slides with page numbers:
 - Structs and unions, Lecture 6, pages 5-12
 - File I/O, Lecture 4, pages 22-27
 
-Important reading from `The C programming language` book by Ritchie:
+## `File I/O` and `gdb` reading
+- https://en.cppreference.com/c/io/fread
+- https://en.cppreference.com/c/io/fwrite
+- https://faculty.winthrop.edu/dannellys/csci325/03_record_IO.htm
+- https://web.eecs.umich.edu/~sugih/pointers/summary.html
+
+## Important reading from `The C programming language` book by Ritchie
 - Chapter 5, till section 5.5, pages 78-89
 
 

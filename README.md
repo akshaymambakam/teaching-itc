@@ -12,6 +12,8 @@ Relevant slides with page numbers:
 - Pointers and variable passing, Lecture 5, pages 5-17
 - Searching and sorting, Lecture 5, pages 21-33
 - Dynamic memory allocation, Lecture 6, page 14
+- Structs and unions, Lecture 6, pages 5-12
+- File I/O, Lecture 4, pages 22-27
 
 Important reading from `The C programming language` book by Ritchie:
 - Chapter 5, till section 5.5, pages 78-89
